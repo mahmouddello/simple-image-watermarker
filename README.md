@@ -3,7 +3,7 @@
 ## Introduction
 A watermarking GUI app created with Python is a user-friendly tool that allows you to easily add watermarks to images. 
 Watermarks are semi-transparent or transparent logos graphics that are superimposed onto images to protect them or indicate ownership. 
-This app provides a graphical interface where users can select image and watermark, and apply the watermark to their image with just a few clicks. 
+This app provides a graphical interface where users can select image and watermark, and apply the watermark to an image with just a few clicks. 
 It's a convenient way to personalize and protect your images before sharing or publishing them online.
 
 ## Example
