@@ -6,6 +6,12 @@ Watermarks are semi-transparent or transparent logos graphics that are superimpo
 This app provides a graphical interface where users can select image and watermark, and apply the watermark to an image with just a few clicks. 
 It's a convenient way to personalize and protect your images before sharing or publishing them online.
 
+## Usage
+* Friendly UI, Click on "Upload Image" Button and select your image.
+* Next Step is to select the watermark or the logo, you should consider that your logo needs to be transparent or ready to use.
+* You will face two frames on the screen; how the image would look before and after.
+* Click "Save" and choose the location to save the new image.
+
 ## Example
 ### Home Page
 <img src="./example_photos/home_01.png">
@@ -16,10 +22,8 @@ It's a convenient way to personalize and protect your images before sharing or p
 ### Save Image
 
 <img src="./example_photos/saved_03.png">
+<hr>
 
-## Usage
-* Friendly UI, Click on "Upload Image" Button and select your image.
-* Next Step is to select the watermark or the logo, you should consider that your logo needs to be transparent or ready to use.
-* You will face two frames on the screen; how the image would look before and after.
-* Click "Save" and choose the location to save the new image.
-* Happy Coding 🎉💻
+<div align="center">
+    <strong>Happy Coding! 💻🎉</strong>
+</div>
