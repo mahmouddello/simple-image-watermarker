@@ -62,7 +62,12 @@ class App(ctk.CTk):
 
         # on trying to re-upload and the user didn't select watermark, hide the frame
         if self.before_frame:
+            self.before_label_text.place_forget()
             self.before_frame.place_forget()
+
+        if self.after_frame:
+            self.after_label_text.place_forget()
+            self.after_frame.place_forget()
 
         # Destroy the existing label if it exists
         if self.image_before_label:
