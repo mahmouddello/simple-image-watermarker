@@ -1,5 +1,7 @@
 # Simple Image Watermarker 
 
+## <img src="./images/development-svg.svg" width="20"> This Project is still under development <img src="./images/development-svg.svg" width="20">
+
 ## Introduction
 A watermarking GUI app created with Python is a user-friendly tool that allows you to easily add watermarks to images. 
 Watermarks are semi-transparent or transparent logos graphics that are superimposed onto images to protect them or indicate ownership. 
