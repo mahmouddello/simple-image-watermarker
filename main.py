@@ -16,6 +16,7 @@ class App(ctk.CTk):
         self.icon_path = ImageTk.PhotoImage(file=os.path.join("images", "python_logo.png"))
         self.wm_iconbitmap()
         self.iconphoto(False, self.icon_path)
+        self.resizable(False, False)
 
         # frames
         self.before_frame = ctk.CTkFrame(self, width=450, height=400, fg_color="green")
@@ -140,23 +141,22 @@ class App(ctk.CTk):
         save_path = filedialog.asksaveasfilename(defaultextension=".png", filetypes=[("Images", [".png", ".jpg"])])
         self.image_after.save(save_path)
         # checking if file is saved correctly in the path, and showing message boxes
-        try:
-            with open(save_path) as file:
-                pass
-        except FileNotFoundError:
-            CTkMessagebox(title="Error", message="Something went wrong!", icon="cancel")
+        if os.path.exists(save_path):
+            CTkMessagebox(title="Success", message="File was saved successfully in the specified directory.",
+                          icon="check")
+            self.destroy_components()
         else:
             CTkMessagebox(title="Success", message="File was saved successfully in the specified directory.",
                           icon="check")
-            self.after_label_text.place_forget()
-            self.after_frame.place_forget()
-            self.before_label_text.place_forget()
-            self.before_frame.place_forget()
-            self.after_frame.place_forget()
-            self.save_btn.place_forget()
-            self.main_label.place(x=10, y=10)
-        finally:
-            file.close()
+
+    def destroy_components(self):
+        self.after_label_text.place_forget()
+        self.after_frame.place_forget()
+        self.before_label_text.place_forget()
+        self.before_frame.place_forget()
+        self.after_frame.place_forget()
+        self.save_btn.place_forget()
+        self.main_label.place(x=10, y=10)
 
     @staticmethod
     def open_github():
